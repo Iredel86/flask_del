@@ -4,7 +4,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-# CORS(apps)
+CORS(app)
 
 ar = [{"name":"ido","age":"36"},{"name":"haim","age":"37"},{"name":"kuki","age":"27"}]
 @app.route('/')
