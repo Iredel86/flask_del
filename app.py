@@ -1,6 +1,6 @@
 import json
 from flask import Flask
-# from flaskgit init
+from flask_cors import CORS
 
 
 app = Flask(__name__)
@@ -12,9 +12,10 @@ def hello():
     return 'Hello, World!'
 
 @app.route('/data')
-def hello():
-    return ar
+def data():
+     return json.dumps(ar)
  
  
 if __name__ == '__main__':
     app.run(debug=True)
+ 
